@@ -10,12 +10,9 @@ In addition, this plugin is able to handle almost any type of content such as im
 The plugin is open source and released for commercial use without cost. I only ask you to [contact me](http://albertino.eti.br/#collapse5 "contact") if you implement it somewhere, so I can take a look or add it here as a demonstration.
 
 ## Demonstration
-| HORIZONTAL  | VERTICAL |
-| ------------- | ------------- |
-| [Template 1](https://albejr.github.io/jquery-albe-timeline/templates/horizontal/index.html "Template Horizontal")  | [Template 1](https://albejr.github.io/jquery-albe-timeline/templates/vertical/index.html "Template Vertical")  |
-|   | [Template 2](https://albejr.github.io/jquery-albe-timeline/templates/simple/index.html "Template Simples")  |
-|   | [Template 3](https://albejr.github.io/jquery-albe-timeline/templates/minimalist/index.html "Template Minimalista")  |
-|   | [Template 4](https://albejr.github.io/jquery-albe-timeline/templates/audain/index.html "Template Audain Designs")  |
+| HORIZONTAL  | 
+| ------------- |
+| [Template 1](https://albejr.github.io/jquery-albe-timeline/templates/horizontal/index.html "Template Horizontal")  | 
 
 ## Requirements
 * Required
@@ -24,10 +21,7 @@ The plugin is open source and released for commercial use without cost. I only a
 [Animate CSS](https://daneden.github.io/animate.css)
 
 ## Installation
-### Bower:
-```html
-$ bower install jquery-albe-timeline --save
-```
+
 ### Nodejs:
 ```html
 $ npm install jquery-albe-timeline --save
@@ -47,7 +41,7 @@ $ npm install jquery-albe-timeline --save
 
    //Json object
    var data = [{
-         time: '2015-04-30 23:59:59',
+         time: '2018-04-30 23:59:59',
          header: 'Sample of header',
          body: [{
                tag: 'h1',
@@ -60,7 +54,7 @@ $ npm install jquery-albe-timeline --save
          footer: 'Sample of footer'
       },
       {
-         time: '2016-01-20',
+         time: '2018-01-20',
          body: [{
                tag: 'h2',
                content: 'Sample with link'

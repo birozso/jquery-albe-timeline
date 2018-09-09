@@ -1,74 +1,106 @@
 //Json Object
 var data = [
-	{
-		time: '2015-03-29',
-		header: 'Sample of header',
-		body: [{
-			tag: 'h1',
-			content: "Lorem ipsum"
-		},
-		{
-			tag: 'p',
-			content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.'
+    {
+        time: '1973-03-24',
+        header: 'Pink Floyd',
+        body: [
+        {
+            tag: 'img',
+            attr: {
+                src: '../img/Dark_Side_of_the_Moon.png',
+                width: '100px',
+                cssclass: 'img-responsive'
+            }
+        },
+        {
+            tag: 'h2',
+            content: 'Dark Side of the Moon'
+        },
+        {
+            tag: 'p',
+			content: `Released in March 1973, the LP became an instant chart success in the UK and throughout Western Europe, earning an enthusiastic response from critics. 
+			<br> Each member of Pink Floyd except Wright boycotted the press release of The Dark Side of the Moon because a quadraphonic mix had not yet been completed, and they felt presenting the album through a poor-quality stereo PA system was insufficient.`
+        }],
+        footer: 'By Source, Fair use, <a href=\"https://en.wikipedia.org/w/index.php?curid=18421376\" target=\"_blank\">source Wikipedia</a>'
+    },
+    {
+        time: '1973-03-23',
+        body: [{
+            tag: 'h1',
+            content: 'Pink Floyd'
+        },
+			{
+            tag: 'img',
+            attr: {
+                src: '../img/Dark_Side_of_the_Moon.png',
+                width: '100px',
+                cssclass: 'img-responsive'
+            }
+        },
+        {
+            tag: 'h2',
+            content: 'Dark Side of the Moon'
+        },
+        {
+            tag: 'p',
+            content: `Released in March 1973, the LP became an instant chart success in the UK and throughout Western Europe, earning an enthusiastic response from critics.`
 		}],
-		footer: 'Sample of footer. See <a href=\"https://github.com/Albejr/jquery-albe-timeline\" target=\"_blank\">more details</a>'
-	},
-	{
-		time: '2015-04-15',
-		body: [{
-			tag: 'h1',
-			content: "Basic content"
+		footer: 'By Source, Fair use, <a href=\"https://en.wikipedia.org/w/index.php?curid=18421376\" target=\"_blank\">source Wikipedia</a>'
+    },
+    {
+        time: '1973-03-22',
+        body: [{
+            tag: 'h1',
+            content: 'Pink Floyd'
 		},
 		{
-			tag: 'p',
-			content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.  See <a href=\"https://github.com/Albejr/jquery-albe-timeline\" target=\"_blank\">more details</a>'
-		}],
-	},
-	{
-		time: '2016-01-20',
-		body: [{
-			tag: 'img',
-			attr: {
-				src: '../img/qrcode.png',
-				width: '150px',
-				cssclass: 'img-responsive'
-			}
-		},
-		{
-			tag: 'h2',
-			content: 'Sample with image'
-		},
-		{
-			tag: 'p',
-			content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.'
-		}]
-	},
-	{
-		time: '2013-01-20',
-		body: [{
-			tag: 'img',
-			attr: {
-				src: '../img/girl.png',
-				width: '100px',
-				cssclass: 'img-responsive'
-			}
-		},
-		{
-			tag: 'h2',
-			content: 'Sample with image rigth'
-		},
-		{
-			tag: 'p',
-			content: 'Lorem ipsum dolor sit amet, nisl lorem, wisi egestas orci tempus class massa, suscipit eu elit urna in urna, gravida wisi aenean eros massa, cursus quisque leo quisque dui.'
-		}]
-	}
+            tag: 'img',
+            attr: {
+                src: '../img/Dark_Side_of_the_Moon.png',
+                width: '100px',
+                cssclass: 'img-responsive'
+            }
+        },
+        {
+            tag: 'h2',
+            content: 'Dark Side of the Moon'
+        },
+        {
+            tag: 'p',
+			content: `Released in March 1973, the LP became an instant chart success in the UK and throughout Western Europe, earning an enthusiastic response from critics.<br>
+			By Source, Fair use, https://en.wikipedia.org/w/index.php?curid=18421376`
+        }]
+    },
+    {
+        time: '1973-03-21',
+        body: [{
+            tag: 'img',
+            attr: {
+                src: '../img/Dark_Side_of_the_Moon.png',
+                width: '100px',
+                cssclass: 'img-responsive'
+            }
+        },
+        {
+            tag: 'h2',
+            content: 'Pink Floyd Dark Side of the Moon'
+        },
+        {
+            tag: 'p',
+            content: `Released in March 1973, the LP became an instant chart success in the UK and throughout Western Europe, earning an enthusiastic response from critics.<br>
+			By Source, Fair use, https://en.wikipedia.org/w/index.php?curid=18421376`
+        }]
+    }
 ];
 
 $(document).ready(function () {
 
-	$('#myTimeline').albeTimeline(data, {
-		effect: "zoomIn",
-		showMenu: false
-	});
+    $('#myTimeline').albeTimeline(data, {
+		language: 'en-US',
+        effect: "zoomInUp",  // 'zoomIn', 'fadeInUp', 'bounceIn',"zoomInUp"
+		showMenu: true,
+		sortDesc: false,
+		showGroup: true
+    });
 
 });
